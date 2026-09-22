@@ -4,7 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.box}><Text style={styles.texto}>1</Text></View>
+      <View style={styles.box}><Text>2</Text></View>
+      <View style={styles.box}><Text>3</Text></View>
+      <Image source={require("./assets/images/un-verano-sin.png")} />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +16,29 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  box1: {
+    width: 50,
+    height: 30,
+    backgroundColor: 'red',
     justifyContent: 'center',
+    alignItems: 'center',
+  },
+  box2: {
+    width: 50,
+    height: 30,
+    backgroundColor: 'blue',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  box3: {
+    width: 50,
+    height: 30,
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
